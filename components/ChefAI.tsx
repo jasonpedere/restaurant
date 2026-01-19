@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { getChefRecommendation } from '../services/geminiService';
+import { getChefRecommendation } from '../services/geminiService.ts';
 
 const ChefAI: React.FC = () => {
   const [input, setInput] = useState('');

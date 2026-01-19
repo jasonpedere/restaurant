@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { ReservationData } from '../types';
+import { ReservationData } from '../types.ts';
 
 const ReservationForm: React.FC = () => {
   const [formData, setFormData] = useState<ReservationData>({

@@ -1,13 +1,13 @@
 
 import React, { useState } from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import MenuSection from './components/MenuSection';
-import ChefAI from './components/ChefAI';
-import ReservationForm from './components/ReservationForm';
-import Location from './components/Location';
-import Footer from './components/Footer';
-import MenuPage from './components/MenuPage';
+import Navbar from './components/Navbar.tsx';
+import Hero from './components/Hero.tsx';
+import MenuSection from './components/MenuSection.tsx';
+import ChefAI from './components/ChefAI.tsx';
+import ReservationForm from './components/ReservationForm.tsx';
+import Location from './components/Location.tsx';
+import Footer from './components/Footer.tsx';
+import MenuPage from './components/MenuPage.tsx';
 
 const App: React.FC = () => {
   const [view, setView] = useState<'home' | 'menu'>('home');

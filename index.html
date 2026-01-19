@@ -18,6 +18,10 @@
             font-family: 'Playfair Display', serif;
         }
     </style>
+    <script>
+      // Shim process.env to prevent crashes in native browser ESM environments
+      window.process = { env: { API_KEY: '' } };
+    </script>
 <script type="importmap">
 {
   "imports": {
@@ -31,5 +35,6 @@
 </head>
 <body class="bg-stone-50 text-stone-900">
     <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
 </body>
 </html>

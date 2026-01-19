@@ -1,4 +1,5 @@
-import { MenuItem } from './types';
+
+import { MenuItem } from './types.ts';
 
 export const BUFFET_RATES = {
   weekday: {

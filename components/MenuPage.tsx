@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { MENU_ITEMS, BUFFET_RATES } from '../constants';
+import { MENU_ITEMS, BUFFET_RATES } from '../constants.tsx';
 
 interface MenuPageProps {
   onBack: () => void;

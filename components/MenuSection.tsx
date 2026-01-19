@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
-import { MENU_ITEMS } from '../constants';
-import { MenuItem } from '../types';
+import { MENU_ITEMS } from '../constants.tsx';
+import { MenuItem } from '../types.ts';
 
 const MenuSection: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<string>('All');
