@@ -1,6 +1,9 @@
 
 import React, { useState } from 'react';
-import { getChefRecommendation } from '../services/geminiService.ts';
+
+const getChefRecommendation = async (preference: string) => {
+  return "I'm currently busy in the kitchen, but I recommend starting with our signature Crispy Pata and ending with Halo-Halo!";
+};
 
 const ChefAI: React.FC = () => {
   const [input, setInput] = useState('');

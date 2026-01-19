@@ -66,7 +66,6 @@ const App: React.FC = () => {
             </section>
 
             <div id="menu">
-              {/* This acts as a preview section on Home */}
               <MenuSection />
               <div className="bg-stone-50 pb-20 text-center">
                 <button 

@@ -1,11 +1,27 @@
 
-import { GoogleGenAI } from "@google/genai";
+let ai: any = null;
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+// Initialize AI client safely
+const initializeAI = async () => {
+  if (ai) return ai;
+  try {
+    const { GoogleGenAI } = await import("@google/genai");
+    ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+    return ai;
+  } catch (error) {
+    console.warn("GoogleGenAI import failed, using fallback responses:", error);
+    return null;
+  }
+};
 
 export const getChefRecommendation = async (preference: string) => {
   try {
-    const response = await ai.models.generateContent({
+    const client = await initializeAI();
+    if (!client) {
+      return "I'm currently busy in the kitchen, but I recommend starting with our signature Crispy Pata and ending with Halo-Halo!";
+    }
+    
+    const response = await client.models.generateContent({
       model: 'gemini-3-flash-preview',
       contents: `User preference: ${preference}. You are the Head Chef of RR Garden Feast Buffet in Cabanatuan City. Recommend a personalized "Feast Combo" from our buffet. Be inviting, professional, and highlight Filipino flavors if possible. Keep it under 100 words.`,
       config: {
