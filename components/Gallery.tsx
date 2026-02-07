@@ -31,14 +31,14 @@ const Gallery: React.FC<GalleryProps> = ({ sections }) => {
     const currentIndex = mobileSlideIndex[sectionIndex] || 0;
     setMobileSlideIndex({
       ...mobileSlideIndex,
-      [sectionIndex]: (currentIndex - 1 + totalPhotos) % totalPhotos
+      [sectionIndex]: ((currentIndex - 1) % totalPhotos + totalPhotos) % totalPhotos
     });
   };
 
   return (
     <section className="py-24 bg-white">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 select-none">
           <h2 className="text-4xl font-serif mb-4">Our Spaces</h2>
           <p className="text-stone-600 text-lg">Experience both elegance and nature</p>
         </div>
@@ -50,8 +50,8 @@ const Gallery: React.FC<GalleryProps> = ({ sections }) => {
 
             return (
               <div key={sectionIndex}>
-                <h3 className="text-3xl font-serif mb-3">{section.title}</h3>
-                <p className="text-stone-600 leading-relaxed mb-8">{section.description}</p>
+                <h3 className="text-3xl font-serif mb-3 select-none">{section.title}</h3>
+                <p className="text-stone-600 leading-relaxed mb-8 select-none">{section.description}</p>
                 
                 {/* Desktop Grid View */}
                 <div className="hidden md:grid grid-cols-2 gap-4">
@@ -112,7 +112,7 @@ const Gallery: React.FC<GalleryProps> = ({ sections }) => {
                   </div>
 
                   {/* Slide Counter */}
-                  <div className="text-center text-sm text-stone-500">
+                  <div className="text-center text-sm text-stone-500 select-none">
                     {currentSlideIndex + 1} of {section.photos.length}
                   </div>
                 </div>
