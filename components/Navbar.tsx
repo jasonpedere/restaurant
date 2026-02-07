@@ -2,8 +2,8 @@
 import React, { useState, useEffect } from 'react';
 
 interface NavbarProps {
-  onNavigate: (view: 'home' | 'menu') => void;
-  currentView: 'home' | 'menu';
+  onNavigate: (view: 'home' | 'menu' | 'about') => void;
+  currentView: 'home' | 'menu' | 'about';
 }
 
 const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentView }) => {
@@ -21,7 +21,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentView }) => {
   }, [currentView]);
 
   const navLinks = [
-    { name: 'About', href: '#about', action: () => onNavigate('home') },
+    { name: 'About', href: '#about', action: () => onNavigate('about') },
     { 
       name: 'Menu', 
       href: '#menu', 
