@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="md:col-span-2">
-            <h2 className="text-2xl font-bold tracking-tighter mb-6">RR GARDEN FEAST</h2>
+            <h2 className="text-2xl font-bold tracking-tighter mb-6">MESA FAMILIA</h2>
             <p className="text-stone-400 max-w-sm mb-6">
               Dedicated to bringing you the most exquisite buffet experience in Nueva Ecija. Quality, fresh ingredients, and exceptional service are at our core.
             </p>
@@ -49,7 +49,7 @@ const Footer: React.FC = () => {
         </div>
         
         <div className="pt-8 border-t border-stone-800 flex flex-col md:flex-row justify-between items-center text-stone-500 text-xs gap-4">
-          <p>© {new Date().getFullYear()} RR Garden Feast Buffet. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Mesa Familia. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-white">Privacy Policy</a>
             <a href="#" className="hover:text-white">Terms of Service</a>

@@ -28,7 +28,7 @@ const App: React.FC = () => {
                     <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl aspect-[4/5]">
                       <img 
                         src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&q=80&w=1200" 
-                        alt="RR Garden Interior" 
+                        alt="Mesa Familia Interior" 
                         className="w-full h-full object-cover" 
                       />
                     </div>
@@ -40,7 +40,7 @@ const App: React.FC = () => {
                     <h2 className="text-orange-600 text-sm font-bold tracking-[0.2em] uppercase mb-4">Our Sanctuary</h2>
                     <h3 className="text-4xl md:text-5xl font-serif mb-8 leading-tight italic">Where Nature Meets Elegance</h3>
                     <p className="text-stone-600 text-lg mb-6 leading-relaxed">
-                      Experience the enchantment of RR Garden Feast Buffet. Our venue is designed as a floral sanctuary, blending the freshness of a garden with the sophistication of a grand banquet hall.
+                      Experience the enchantment of Mesa Familia. Our venue is designed as a floral sanctuary, blending the freshness of a garden with the sophistication of a grand banquet hall.
                     </p>
                     <p className="text-stone-600 text-lg mb-10 leading-relaxed">
                       From our signature hanging garden ceilings to the refined marble finishes, every detail in our Cabanatuan City flagship is crafted to make your celebration truly unforgettable.

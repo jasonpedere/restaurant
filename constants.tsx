@@ -96,7 +96,7 @@ export const MENU_ITEMS: MenuItem[] = [
 ];
 
 export const APP_INFO = {
-  name: 'RR Garden Feast Buffet',
+  name: 'Mesa Familia',
   address: 'Wellspring Complex, Cabanatuan City, Philippines',
   phone: '+63 912 345 6789',
   email: 'reservations@rrgardenfeast.com',

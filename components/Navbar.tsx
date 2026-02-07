@@ -50,7 +50,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentView }) => {
               isScrolled || currentView === 'menu' ? 'text-stone-900' : 'text-white'
             }`}
           >
-            RR GARDEN FEAST
+            MESA FAMILIA
           </button>
           
           {/* Desktop Navigation */}
@@ -136,7 +136,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentView }) => {
           isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}>
           <div className="flex justify-between items-center mb-16">
-            <span className="text-xl font-serif font-bold italic text-orange-600">RR Garden</span>
+            <span className="text-xl font-serif font-bold italic text-orange-600">Mesa Familia</span>
             <button onClick={() => setIsMobileMenuOpen(false)} className="text-stone-400 hover:text-stone-900">
               <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />

@@ -23,7 +23,7 @@ export const getChefRecommendation = async (preference: string) => {
     
     const response = await client.models.generateContent({
       model: 'gemini-3-flash-preview',
-      contents: `User preference: ${preference}. You are the Head Chef of RR Garden Feast Buffet in Cabanatuan City. Recommend a personalized "Feast Combo" from our buffet. Be inviting, professional, and highlight Filipino flavors if possible. Keep it under 100 words.`,
+      contents: `User preference: ${preference}. You are the Head Chef of Mesa Familia in Cabanatuan City. Recommend a personalized "Feast Combo" from our buffet. Be inviting, professional, and highlight Filipino flavors if possible. Keep it under 100 words.`,
       config: {
         temperature: 0.7,
       },

@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
       <div className="absolute inset-0 z-0">
         <img 
           src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=2000" 
-          alt="RR Garden Feast Venue" 
+          alt="Mesa Familia Venue" 
           className="w-full h-full object-cover scale-105"
         />
         <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px]"></div>
@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
           A Feast for the Senses in Our Floral Sanctuary
         </h1>
         <p className="text-stone-100 text-lg md:text-xl max-w-2xl mx-auto mb-12 font-light leading-relaxed">
-          Step into a world where gourmet Filipino heritage meets a breathtaking garden setting. Your table at RR Garden Feast awaits.
+          Step into a world where gourmet Filipino heritage meets a breathtaking garden setting. Your table at Mesa Familia awaits.
         </p>
         <div className="flex flex-col md:flex-row items-center justify-center gap-6">
           <a 
